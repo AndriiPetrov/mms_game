@@ -1,10 +1,6 @@
 function mms(n, a) {
   if (n === 1) {
-    if (a[0] === 1) {
-      return 'Ельф';
-    } else {
-      return 'Олень';
-    }
+    return a[0] === 1 ? 'Ельф' : 'Олень';
   }
 
   if (n % 2 === 0) {
@@ -12,19 +8,11 @@ function mms(n, a) {
       return 'Олень';
     }
 
-    if (a.reduce((acc, el) => acc + el) % 2 === 0) {
-      return 'Ельф';
-    } else {
-      return 'Олень';
-    }
+    return a.reduce((acc, el) => acc + el) % 2 === 0 ? 'Ельф' : 'Олень';
   }
 
   if (n % 2 === 1) {
-    if (a.reduce((acc, el) => acc + el) % 2 === 1) {
-      return 'Ельф';
-    } else {
-      return 'Олень';
-    }
+    return a.reduce((acc, el) => acc + el) % 2 === 1 ? 'Ельф' : 'Олень';
   }
 }
 
