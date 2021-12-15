@@ -9,9 +9,7 @@ function mms(n, a) {
     }
 
     return a.reduce((acc, el) => acc + el) % 2 === 0 ? 'Ельф' : 'Олень';
-  }
-
-  if (n % 2 === 1) {
+  } else {
     return a.reduce((acc, el) => acc + el) % 2 === 1 ? 'Ельф' : 'Олень';
   }
 }
