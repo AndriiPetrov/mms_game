@@ -42,3 +42,5 @@ console.log(mms(4, [1, 1, 2, 2]));
 console.log(mms(4, [1, 1, 2, 3]));
 console.log(mms(5, [1, 1, 1, 1, 1]));
 console.log(mms(5, [7, 10, 3, 9, 12]));
+
+if (module) module.exports = mms;
